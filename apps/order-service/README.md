@@ -1,0 +1,2 @@
+Skeleton for order-service.
+

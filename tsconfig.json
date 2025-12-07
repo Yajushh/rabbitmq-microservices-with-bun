@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // Environment setup & latest features
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Path aliases for shared libraries
+    "baseUrl": ".",
+    "paths": {
+      "@shared-rabbit": ["./libs/shared-rabbit/src/index.ts"],
+      "@shared-rabbit/*": ["./libs/shared-rabbit/src/*"],
+      "@shared-types": ["./libs/shared-types/src/index.ts"],
+      "@shared-types/*": ["./libs/shared-types/src/*"],
+      "@shared-db": ["./libs/shared-db/src/index.ts"],
+      "@shared-db/*": ["./libs/shared-db/src/*"],
+      "@shared-config": ["./libs/shared-config/src/index.ts"],
+      "@shared-config/*": ["./libs/shared-config/src/*"],
+      "@shared-logging": ["./libs/shared-logging/src/index.ts"],
+      "@shared-logging/*": ["./libs/shared-logging/src/*"]
+    }
+  }
+}
