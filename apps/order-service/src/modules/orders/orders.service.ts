@@ -1,5 +1,5 @@
-import type { OrdersMessageBus } from './orders.messages';
 import { toOrderDTO } from './orders.model';
+import type { OrdersMessageBus } from './orders.messages';
 import type { OrdersRepository } from './orders.repository';
 import type { OrderCreatedEvent } from '@shared-types';
 
